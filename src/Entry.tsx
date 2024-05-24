@@ -1,18 +1,12 @@
-import {View, Text} from 'react-native';
+import Stack from '@navigation/Stack';
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 
 const Entry = () => {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text
-        style={{
-          fontSize: 36,
-          fontWeight: 'bold',
-          color: 'red',
-        }}>
-        Entry Screen
-      </Text>
-    </View>
+    <NavigationContainer>
+      <Stack />
+    </NavigationContainer>
   );
 };
 
